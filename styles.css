@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Geist Mono", monospace;
+}
+
+body{
+    background-color: black;
+}
+
+img{
+    width: 200px;
+    margin: 20px auto 50px;
+    display: block;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px 15px 25px;
+    border-radius: 15px;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+h1{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 20px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    width: 370px;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+input{
+    width: 40%;
+    border-radius: 5px;
+    border: 2px solid black;
+    height: 34px;
+    padding-left: 10px;
+    outline: none;
+    box-shadow: 5px 5px 10px;
+    
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    background-color: crimson;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: .8;
+}
+button:active{
+    opacity: .5;
+}
+
+.left-margin{
+    background: linear-gradient(90deg, rgba(136,136,139,1) 0%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 150vh;
+    opacity: .2;
+    z-index: -1;
+}
+
+.right-margin{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(136,136,139,1) 100%);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20vw;
+    height: 150vh;
+    opacity: .2;
+    z-index: -1;
+}
+
+@media (max-width: 460px) {
+    main{
+        width: 250px;
+    }
+    img{
+        width: 150px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    p{
+        font-size: 14px;
+    }
+    /* input{
+        width: 85px;
+    } */
+    section{
+        width: 220px;
+    }
+}
